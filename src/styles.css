@@ -1,0 +1,34 @@
+.cs-video-container {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: fit-content;
+}
+
+.cs-cue-container {
+    container-type: size;
+    position: absolute;
+    overflow: hidden;
+}
+
+.cue {
+    position: absolute;
+    top: var(--cue-top);
+    bottom: var(--cue-bottom);
+    left: var(--cue-left);
+    width: var(--cue-width);
+    text-align: var(--cue-align, center);
+    font-size: 5cqh;
+    scale: calc(var(--cue-size, 100) / 100);
+}
+
+.cue__text {
+    display: inline-block;
+    white-space: pre;
+    animation-fill-mode: forwards;
+    paint-order: stroke fill;
+}
+
+video.cues-hidden::cue {
+    opacity: 0;
+}
