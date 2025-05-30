@@ -38,7 +38,7 @@ new CaptionPlayer(video)
 or import using vite or webpack:
 
 ```js
-import '@caption-styler/caption-player.css'
+import '@caption-styler/caption-player/styles.css'
 ```
 
 The `CaptionPlayer` will add a container around the video and display the captions.
