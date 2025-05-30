@@ -9,7 +9,7 @@
     ],
     "license": "SEE LICENSE IN LICENSE",
     "private": false,
-    "version": "0.1.0",
+    "version": "0.1.1",
     "type": "module",
     "main": "./dist/caption-player.umd.js",
     "module": "./dist/caption-player.es.js",
