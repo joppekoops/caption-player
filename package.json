@@ -1,8 +1,12 @@
 {
-    "name": "caption-player",
+    "name": "@caption-styler/caption-player",
     "description": "A player for vtt captions made with Caption Styler",
     "author": "Joppe Koops",
-    "keywords": ["captions", "subtitles", "vtt"],
+    "keywords": [
+        "captions",
+        "subtitles",
+        "vtt"
+    ],
     "license": "SEE LICENSE IN LICENSE",
     "private": false,
     "version": "0.1.0",
@@ -10,17 +14,18 @@
     "main": "./dist/caption-player.umd.js",
     "module": "./dist/caption-player.es.js",
     "files": [
-        "dist"
+        "/dist"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/caption-player.git"
+        "url": "git+https://github.com/joppekoops/caption-player.git"
     },
     "exports": {
         ".": {
             "import": "./dist/caption-player.es.js",
             "require": "./dist/caption-player.umd.js"
-        }
+        },
+        "./styles.css": "./dist/caption-player.css"
     },
     "publishConfig": {
         "registry": "https://npm.pkg.github.com"
